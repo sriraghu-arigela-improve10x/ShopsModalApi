@@ -1,4 +1,6 @@
-package com.example.shopsmodelapi;
+package com.example.shopsmodelapi.network;
+
+import com.example.shopsmodelapi.modal.Shops;
 
 import java.util.List;
 
