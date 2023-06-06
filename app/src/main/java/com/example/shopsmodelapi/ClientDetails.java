@@ -19,4 +19,7 @@ public class ClientDetails {
     @SerializedName("session_hash")
     private String sessionHash;
 
+    @SerializedName("user_agent")
+    private String userAgent;
+
 }

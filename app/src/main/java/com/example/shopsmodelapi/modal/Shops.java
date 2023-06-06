@@ -2,6 +2,8 @@ package com.example.shopsmodelapi.modal;
 
 import com.example.shopsmodelapi.ClientDetails;
 import com.example.shopsmodelapi.money.CurrentTotalPriceSet;
+import com.example.shopsmodelapi.money.LineItems;
+import com.example.shopsmodelapi.money.OriginLocation;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
@@ -43,8 +45,6 @@ public class Shops {
     @SerializedName("client_details")
     public ClientDetails clientDetails;
 
-    @SerializedName("user_agent")
-    private String userAgent;
 
     @SerializedName("closed_at")
     private String closedAt;
@@ -165,4 +165,81 @@ public class Shops {
 
     @SerializedName("subtotal_price")
     private String subtotalPrice;
+
+    @SerializedName("subtotal_price_set")
+    public CurrentTotalPriceSet subtotalPriceSet;
+
+    @SerializedName("tags")
+    private String tags;
+
+    @SerializedName("taxes_included")
+    private boolean taxesIncluded;
+
+    @SerializedName("test")
+    private boolean test;
+
+    @SerializedName("token")
+    private String token;
+
+    @SerializedName("total_discounts")
+    private String totalDiscounts;
+
+    @SerializedName("total_discounts_set")
+    public CurrentTotalPriceSet totalDiscountsSet;
+
+    @SerializedName("total_line_items_price")
+    private String totalLineItemsPrice;
+
+    @SerializedName("total_line_items_price_set")
+    public CurrentTotalPriceSet totalLineItemsPriceSet;
+
+    @SerializedName("total_outstanding")
+    private String totalOutstanding;
+
+    @SerializedName("total_price")
+    private String totalPrice;
+
+    @SerializedName("total_price_set")
+    public CurrentTotalPriceSet totalPriceSet;
+
+    @SerializedName("total_price_usd")
+    private String totalPriceUsd;
+
+    @SerializedName("total_shipping_price_set")
+    public CurrentTotalPriceSet totalShippingPriceSet;
+
+    @SerializedName("total_tax")
+    private String totalTax;
+
+    @SerializedName("total_tax_set")
+    public CurrentTotalPriceSet totalTaxSet;
+
+    @SerializedName("total_tip_received")
+    private String totalTipReceived;
+
+    @SerializedName("total_weight")
+    private Integer totalWeight;
+
+    @SerializedName("updated_at")
+    private String updatedAt;
+
+    @SerializedName("user_id")
+    private String userId;
+
+    @SerializedName("discount_applications")
+    private ArrayList<String> discountApplications;
+
+    @SerializedName("fulfillments")
+    private ArrayList<String> fulfillments;
+
+    @SerializedName("line_items")
+    private ArrayList<LineItems> lineItems;
+
+    @SerializedName("origin_location")
+    private OriginLocation originLocation;
+
+    @SerializedName("payment_terms")
+    private String paymentTerms;
+
+    private ArrayList<String> refunds;
 }
